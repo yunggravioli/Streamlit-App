@@ -61,11 +61,11 @@ if uploaded_file is not None:
     ax.set_ylabel('Count')
 
     st.pyplot(fig)
-    filename = "plot.png"
+    filename = "saveplot1.png"
     fig.savefig(filename,dpi = 300)
 
     # Display the download button
-    with open("plot.png", "rb") as file:
+    with open("saveplot1.png", "rb") as file:
       btn = st.download_button(
           label="Download image",
           data=file,
@@ -101,11 +101,11 @@ if uploaded_file is not None:
     ax.set_title(categorical_column)
 
     st.pyplot(fig)
-    filename = "plot.png"
+    filename = "saveplot2.png"
     fig.savefig(filename,dpi = 300)
 
     # Display the download button
-    with open("plot.png", "rb") as file:
+    with open("saveplot2.png", "rb") as file:
       btn = st.download_button(
           label="Download image",
           data=file,
